@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <main>
+        <img src="./img/bag.png" alt="sacola de compras" class="formulario-imagem">
+
+        <form class="formulario">
+            <input id="input-item" type="text" placeholder="Digite o item que deseja adicionar">
+            <button id="adicionar-item">Salvar Item</button>
+        </form>
+
+        <div class="lista">
+            <h2>Lista de Compras</h2>
+            <hr>
+
+            <ul id="lista-de-compras">
+                <p id="mensagem-lista-vazia" style="display: block">Sua lista está vazia. Adicione itens para não esquecer nada na próxima compra!</p>
+
+                <!-- <li class="lista-item">
+
+                    <div class="lista-item-l1">
+
+                        <div class="lista-item-check-nome">
+    
+                            <div class="checkbox-container">
+                                <label for="checkbox-1">
+                                    <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
+                                    <div class="checkbox-customizado checked"></div>
+                                </label>
+                            </div>
+
+                            <p>Queijo Minas</p>
+                            
+                        </div>
+        
+                        <div class="lista-botoes">
+                            <button class="lista-button"><img src="./img/delete.svg" alt="deletar"></button>
+                            <button class="lista-button"><img src="./img/edit.svg" alt="editar"></button>
+                        </div>
+    
+                    </div>
+    
+                    <p class="lista-item-l2">Segunda-feira (31/10/2023) às 8:30</p>
+    
+                </li> -->
+            </ul>
+
+            <div id="titulo-lista-comprados" style="display: none">
+                <h2>Comprado</h2>
+                <hr/>
+            </div>
+
+            <ul id="lista-comprados">
+
+            </ul>
+
+
+        </div>
+
+    </main>
+    <script src="./scripts.js" type="module"></script>
+</body>
+
+</html>
